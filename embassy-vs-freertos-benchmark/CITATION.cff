@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this benchmark or dataset, please cite the accompanying paper."
+title: "Is Async Truly Zero-Cost? Benchmarking Latency and Jitter in no_std Rust vs. FreeRTOS on ARM Cortex-M"
+type: software
+version: 0.1.0
+date-released: 2026-09-28
+license: MIT
+keywords:
+  - embedded systems
+  - Rust
+  - Embassy
+  - FreeRTOS
+  - ARM Cortex-M
+  - STM32F411
+  - latency
+  - jitter

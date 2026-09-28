@@ -1,0 +1,22 @@
+# Rust build output
+**/target/
+
+# STM32CubeIDE build output
+**/Debug/
+**/Release/
+
+# IDE / OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.launch
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Temporary analysis outputs
+*.tmp

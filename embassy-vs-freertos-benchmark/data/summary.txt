@@ -1,0 +1,16 @@
+STM32F411CEU6 benchmark, HCLK = 16 MHz, n = 1000 per implementation
+
+Rust/Embassy
+  empty    : median=6.00, mean=6.00, sd=0.00, min=6, p95=6.00, p99=6.00, max=6
+  crc      : median=7647.00, mean=7647.00, sd=0.00, min=7647, p95=7647.00, p99=7647.00, max=7647
+  roundtrip: median=760.00, mean=760.00, sd=0.00, min=760, p95=760.00, p99=760.00, max=760
+
+C/FreeRTOS
+  empty    : median=13.00, mean=13.76, sd=24.06, min=13, p95=13.00, p99=13.00, max=774
+  crc      : median=17286.00, mean=17356.65, sd=221.66, min=17284, p95=18049.00, p99=18150.00, max=18152
+  roundtrip: median=1077.00, mean=1140.76, sd=208.00, min=1077, p95=1825.00, p99=1927.00, max=1932
+
+Median round-trip: Rust 760 cycles (47.50 us), FreeRTOS 1077 cycles (67.31 us)
+FreeRTOS/Rust median ratio: 1.417x
+Rust median reduction vs FreeRTOS: 29.43%
+Figures written to /mnt/data/embassy-vs-freertos-benchmark/figures
